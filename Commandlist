@@ -1,0 +1,24 @@
+Alle Produkte abrufen:
+$products = Product::all();
+
+Ein neues Produkt erstellen:
+$product = new Product();
+$product->name = 'Neues Produkt';
+$product->price = 29.99;
+$product->save();
+
+Ein Produkt aktualisieren:
+$product = Product::find(1);
+$product->price = 19.99;
+$product->save();
+
+Ein Produkt löschen:
+Product::destroy(1);
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+html
+     mainpage
+         verlinkungen zu anderen seiten
+     Gesammtbestand
+
+views
+     überarbeiten: verbindung von classen und datenbank_datensätze anbinden
+         Geräte
+         monitorkabel
+         netzwerkabel
+         usb kabel
+
+css
+     produkte
+         Geräte
+         monitorkabel
+         netzwerkabel
+         usb kabel
+     Mainpage
+     Gesammtbestand
+
+routes
+     produkte
+         Geräte
+         monitorkabel
+         netzwerkabel
+         usb kabel
+
+migrationen
+     mitarbeiter liste
+
+controller
+     informationen sammeln!
+
+     
+seeder
+     Geräte
+     monitorkabel 
+     netzwerkabel
+     usb kabel
+     mitarbeiter
