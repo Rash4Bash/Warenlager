@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown-Menü mit Div</title>
+    <style>
+/* ------------------main-Links------------------ */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: silver;
+        }
+        .menu {
+            display: flex; 
+            justify-content: space-evenly;
+            border-bottom: 3px solid;
+            padding: 10px; 
+        }
+
+        .menu > div {
+            position: relative; 
+            margin-right: 15px; 
+        }
+
+/* ------------------menü-Links------------------ */
+        .menu a {
+            display: block; 
+            padding: 10px; 
+            text-decoration: none; 
+        }
+
+/* ------------------Oben-Links------------------ */
+        .menu .oben:hover {
+        border-bottom: solid;
+        border-radius: 20%;
+        border-color: gray;
+        }
+        /* Dropdown-Menü */
+        .dropdown .unterpage {
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            min-width: 100%; 
+            border-radius: 0 0 20px 20px; 
+            text-align: center;
+            z-index: 1; 
+        }
+        
+        .dropdown:hover .unterpage {
+            display: block; /* Dropdown anzeigen beim Hover über den Hauptlink */
+        }
+        
+        /* ------------------Dropdown-Links------------------ */
+        .dropdown .unterpage > div {
+            display: block; /* Jeder Dropdown-Eintrag als Block */
+        }
+        
+        /* Hover-Effekt für Dropdown-Links */
+        .dropdown .unterpage > div a:hover {
+            border-left:solid;
+            border-radius: 70%;
+            border-color: gray;
+            background-color: rgba(245, 245, 220, 0.146);
+            padding: 10px;
+            
+        }
+/* ------------------mitte-Links------------------ */
+
+/* ------------------unten-Links------------------ */
+        </style>
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <div class="oben"><a href="#">Dashboard</a></div>
+            <div class="dropdown">
+         <a href="#" class="oben">Produkt Kategorie</a>
+        <div class="unterpage">
+        <div class="topbutton"><a href="#">Netzwerkkabel</a></div>
+            <div><a href="#">Elektrogeräte</a></div>
+            <div><a href="#">USB Kabel</a></div>
+            <div class="lastbutton"><a href="#">Monitor kabel</a></div>
+            </div>
+         </div>
+            <div class="dropdown">
+         <div class="oben"><a href="#">Notizen</a></div>
+            <div class="unterpage">
+             <div class="topbutton"><a href="#">Notitz Erstellen</a></div>
+             <div><a href="#">Notize abrufen</a></div>
+            </div>
+         </div>
+         <div class="oben"><a href="#">Meldung</a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+td{
+    border: 1px solid;
+    padding: 5px;
+}
+th{
+    border: 1px solid;
+    background-color: silver;
+}
+    </style>
+</head>
+<body>
+    <table>
+<thead>
+    <div>
+    <tr>
+        <th>Kategorie</th>
+        <th>Produkt</th>
+        <th>Produkt Nummer</th>
+        <th>Artikelnummer</th>
+        <th>Anzahl</th>
+    </tr>
+</div>
+</thead>
+<div>    <!-- db abfrage anpassen für richtige tabelleausgabe!-->
+    <tr>
+    <td rowspan="8">usb kabel</td>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td> 
+        </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_! 1')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_! 2')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+    <tr>
+         <td>USB Kabel</td>
+         <td> {{ $usbkabel->where('Artikelnummer', 'X')->first()->nummer }}</td>
+         <td>{{ $elektrogeraete->where('bezeichnung', '!_ersetzten_!')->first()->anzahl ?? 'Nicht verfügbar' }}</td>
+         </tr>
+
+        </table>    
+</div>
+</body>
+</html>
