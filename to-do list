@@ -1,41 +1,34 @@
 html
      mainpage
-         verlinkungen zu anderen seiten
-     Gesammtbestand
+        verlinkungen zu anderen seiten
 
 views
      überarbeiten: verbindung von classen und datenbank_datensätze anbinden
-         Geräte
-         monitorkabel
-         netzwerkabel
-         usb kabel
-
-css
-     produkte
-         Geräte
-         monitorkabel
-         netzwerkabel
-         usb kabel
-     Mainpage
-     Gesammtbestand
+        Geräte
+        monitorkabel
+        netzwerkabel
+        usb kabel
 
 routes
      produkte
-         Geräte
-         monitorkabel
-         netzwerkabel
-         usb kabel
+        Geräte
+        monitorkabel
+        netzwerkabel
+        usb kabel
 
 migrationen
-     mitarbeiter liste
+    Kundenerstellung
 
 controller
-     informationen sammeln!
+     USBkabel
+     netzwerkabel
+     monitorkabel
 
-     
 seeder
      Geräte
      monitorkabel 
      netzwerkabel
      usb kabel
      mitarbeiter
+ 
+

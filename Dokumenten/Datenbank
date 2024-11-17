@@ -1,0 +1,80 @@
+ideen sammlung für das Warenlagersystem 
+
+!Fragen
+    (Nummerirung
+     []Artikelnummer  
+     []Seriennummer
+    (Aritkelnamen
+     []Aritkelnamen
+     []Eigenamen?
+    (Kategorien
+     [] Vorschlag 
+     [] Vorschlag 
+     [] Vorschlag 
+     [] Vorschlag 
+     [] Vorschlag
+    (Anwendungsbereich
+     [] ja 
+     [] nein
+
+Welche Produkte gibt es ? 
+     1.
+     2.
+     3.
+     4.
+     5.
+     6.
+     7.
+     8.
+     9.
+
+Lager struktur: 
+Wo wird was gelagert? 
+
+[Vorschlag Bezeichnungsschema =
+    Ganknummer + Regal Buchstabe + Fachnummer]
+     #Gang: 1
+        Regal a
+         fach 1:
+             <Produkt = G1AF1> 
+         fach 2:
+             <Produkt = G1AF2>
+         fach 3: 
+             <Produkt = G1AF3>
+        Regal b
+            fach 1:
+                <Produkt = G1BF1>
+            fach 2:
+                <Produkt = G1BF2>
+            fach 3:
+                <Produkt = G1BF3>
+        Regal c
+            fach 1:
+                <Produkt = G1CF1>
+            fach 2:
+                <Produkt = G1CF2>
+            fach 3:
+                <Produkt = G1CF3>
+     (Gang_2) 
+        Regal_a 
+            fach 1:
+                <Produkt = G2AF1>
+            fach 2:
+                <Produkt = G2AF2>
+            fach 3:
+                <Produkt = G2AF3> 
+        Regal_b
+            fach 1:
+                <Produkt = G2BF1>
+            fach 2:
+                <Produkt = G2BF2>
+            fach 3:
+                <Produkt = G2BF3>
+        Regal c
+            fach 1:
+                <Produkt = G2CF1>
+            fach 2:
+                <Produkt = G2CF2>
+            fach 3:
+                <Produkt = G2CF3>
+

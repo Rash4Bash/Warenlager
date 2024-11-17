@@ -9,12 +9,17 @@
         body {
             font-family: Arial, sans-serif;
             background-color: silver;
+            width: 80%;
         }
         .menu {
             display: flex; 
             justify-content: space-evenly;
-            border-bottom: 3px solid;
             padding: 10px; 
+            background-color: rgba(78, 134, 151, 0.322);
+            
+        
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
         }
 
         .menu > div {
@@ -30,10 +35,11 @@
         }
 
 /* ------------------Oben-Links------------------ */
+
         .menu .oben:hover {
         border-bottom: solid;
         border-radius: 20%;
-        border-color: gray;
+        border-color: grey;
         }
         /* Dropdown-Menü */
         .dropdown .unterpage {
@@ -53,19 +59,29 @@
         /* ------------------Dropdown-Links------------------ */
         .dropdown .unterpage > div {
             display: block; /* Jeder Dropdown-Eintrag als Block */
+            border-bottom-left-radius: 10px; 
+        }
+        .dropdown .unterpage  {
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
         }
         
         /* Hover-Effekt für Dropdown-Links */
         .dropdown .unterpage > div a:hover {
             border-left:solid;
             border-radius: 70%;
-            border-color: gray;
-            background-color: rgba(245, 245, 220, 0.146);
+            border-color: rgb(232, 0, 0);
+            background-color: rgba(0, 0, 0, 0.332);
             padding: 10px;
             
         }
 /* ------------------mitte-Links------------------ */
-
+.mitte{
+    border: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
 /* ------------------unten-Links------------------ */
         </style>
 </head>
@@ -76,14 +92,14 @@
             <div class="dropdown">
          <a href="#" class="oben">Produkt Kategorie</a>
         <div class="unterpage">
-        <div class="topbutton"><a href="#">Netzwerkkabel</a></div>
-            <div><a href="#">Elektrogeräte</a></div>
-            <div><a href="#">USB Kabel</a></div>
-            <div class="lastbutton"><a href="#">Monitor kabel</a></div>
+            <div class="topbutton"><a href="/views/Inhalte/Produkte/Netzwerkkabel.blade.html">Netzwerkkabel</a></div>
+            <div><a href="/views/Inhalte/Produkte/Elektrogeraete.blade.html">Elektrogeräte</a></div>
+            <div><a href="/views/Inhalte/Produkte/USB_Kabel.blade.html">USB Kabel</a></div>
+            <div class="lastbutton"><a href="/views/Inhalte/Produkte/Monitorkabel.blade.html">Monitor kabel</a></div>
             </div>
          </div>
             <div class="dropdown">
-         <div class="oben"><a href="#">Notizen</a></div>
+        <div class="oben"><a href="#">Notizen</a></div>
             <div class="unterpage">
              <div class="topbutton"><a href="#">Notitz Erstellen</a></div>
              <div><a href="#">Notize abrufen</a></div>
@@ -92,5 +108,8 @@
          <div class="oben"><a href="#">Meldung</a></div>
         </div>
     </div>
+
+
+    <div class="mitte">inhalt</div>
 </body>
 </html>

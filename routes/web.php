@@ -28,3 +28,11 @@ Route::get('/', function () {
      // 
 // Routen für Benutzerverwaltung
      //
+
+// Routen für Produkt +erstellung + speichern
+
+use App\Http\Controllers\MonitorkabelController;
+
+Route::get('/monitorkabel-erstellen', [MonitorkabelController::class, 'create']);
+Route::post('/monitorkabel-speichern', [MonitorkabelController::class, 'store'])->name('monitorkabel.store');
+

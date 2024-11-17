@@ -8,6 +8,12 @@
 <body>
         <!-- 
 ideenfindung
+
+Mengen anzeige bei Geringen bestand mit 3 stufen von Mengen 
+     Gelb: genau 10 
+     Orange: unter 10 
+     rot: 0
+ 
 -->
 </body>
 </html>

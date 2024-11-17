@@ -4,76 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netzwerkkabel Übersicht</title>
-    <style>
-        table {
-            width: 50%;
-            border-collapse: collapse; 
-        }
-        th, td {
-            border: 1px solid #ddd; 
-            padding: 8px; 
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2; 
-        }
-    </style>
-</head>
-<body>
-    <table>
-<thead>
-    <tr>
-     <th>Kategorie</th>
-     <th>A-Nr.</th>
-     <th>Bezeichnung</th>
-     <th>Länge</th>
-     <th>Anzahl</th>
+    <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+<table class="all">
+   <thead>
+    <tr class="top">
+    <th>Kategorie</th>
+    <th>Produkt Nr.</th>
+    <th>Bezeichnung</th>
+    <th>Länge</th>
+    <th>Anzahl</th>
     </tr>
-</thead>
-    <tbody>
-     <tr>
-      <td rowspan="7">Netzwerkkabel</td>
-        <td>1</td>
-        <td>NW_Kabel v.1</td>
-        <td>0.5m</td>
-      <td><!-- ersetzung für anzahl aus datenbank --></td>
-        <tr>
-     <td>2</td>
-        <td>NW_Kabel v.2</td>
-        <td>1m</td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
+   </thead>
+
+   <tbody>
+    @foreach($Netzwerkkabel as $nwkabel)
     <tr>
-        <td>3</td>
-        <td>NW_Kabel v.3</td>
-        <td>1.5m</td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
-    <tr>
-        <td>4</td>
-        <td>NW_Kabel v.4</td>
-        <td>2m</td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
-    <tr>
-        <td>NW_Kabel v.5</td>
-        <td>5</td>
-        <td>5m</td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
-    <tr>
-        <td>6</td>
-        <td>NW_Kabel 6</td>
-        <td><!-- welche länge? --></td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
-    <tr>
-        <td>7</td>
-        <td>NW_Kabel 7</td>
-        <td><!-- welche länge? --></td>
-        <td><!-- ersetzung für anzahl aus datenbank --></td>
-     </tr>
-        </tbody>
-    </table>
+    <td>Netzwerkkabel</td>
+    <td>{{ $nwkabel->produkt_nr }}</td>
+    <td>{{ $nwkabel->bezeichnung }}</td>
+    <td>{{ $nwkabel->länge ?? 'keine variation'}}</td>
+    <td>{{ $nwkabel->anzahl ?? 'Nicht verfügbar' }}</td>
+    </tr>
+    @endforeach
+   </tbody>
+</table>
+</div>
 </body>
 </html>

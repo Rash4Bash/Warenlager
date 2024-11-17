@@ -1,0 +1,53 @@
+einbidung von Ewe Markt
+    brainstaorm:
+        Rewe-Kunden regestrierung einführen?
+        erweiteurngen:
+        "produktliste" einführung von der spalte, *resevierung 
+
+
+
+[!Datenbankaufbau]
+
+Beschreibung
+[!Tabelle] 
+&Datenfeld
+
+
+[!Marktprofil]
+    &MarktID[PK]  // "001", = 
+         format: INTIGER
+    &marktnummer // "BW01",
+         format: varchar
+    &markltietung // "Florian Fake",
+         format: 
+    &Bundesland // "BW",
+         format: 
+    &PLZ // "75328",
+         format: INTIGER
+    &Straße // "Fakestraße",
+         format: 
+    &straßennummer "10",
+         format: varchar
+    
+[!reservierung->Markt]
+    &MarktID[FK]
+    &RES_nummer[FK]
+    &ProduktID
+
+[!Reservierung]
+    &RES_nummer[PK] 
+    &MarktID
+    &ProdukteID
+    &anzahl
+     formel anzahl - bestand
+          
+-
+
+API: PLZ_data 
+!erstellen:
+     routedatei
+     controler
+
+                
+                 
+     

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagersystem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-5">
+  <table class="min-w-full bg-white shadow-lg rounded-lg overflow-hidden">
+    <thead>
+      <tr class="bg-blue-600 text-white">
+        <th class="px-6 py-3 text-left">Produkt-ID</th>
+        <th class="px-6 py-3 text-left">Bezeichnung</th>
+        <th class="px-6 py-3 text-left">Menge</th>
+        <th class="px-6 py-3 text-left">Lagerort</th>
+        <th class="px-6 py-3 text-left">Preis</th>
+        <th class="px-6 py-3 text-left">Barcode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-gray-200">
+        <td class="px-6 py-4">G1AF1</td>
+        <td class="px-6 py-4">Produkt A</td>
+        <td class="px-6 py-4">100</td>
+        <td class="px-6 py-4">Regalfach 1</td>
+        <td class="px-6 py-4">10,00 €</td>
+        <td class="px-6 py-4"><img src="barcode_G1AF1.png" alt="Barcode" class="w-24"></td>
+      </tr>
+      <tr class="hover:bg-gray-200">
+        <td class="px-6 py-4">G2AF2</td>
+        <td class="px-6 py-4">Produkt B</td>
+        <td class="px-6 py-4">50</td>
+        <td class="px-6 py-4">Regalfach 2</td>
+        <td class="px-6 py-4">20,00 €</td>
+        <td class="px-6 py-4"><img src="barcode_G2AF2.png" alt="Barcode" class="w-24"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

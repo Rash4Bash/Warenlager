@@ -1,0 +1,64 @@
+Bestandliste
+ Produkt Kategorie
+<-- Anzeige + bearbeitung des der Produkt anzahl -->
+    [1]Elektrogeräte
+        Auflistung von allen Elektrogeräte
+    [2]Monitorkabel
+        Auflistung von allen
+    [3]netzwerkkabel
+        Auflistung von allen netzwerkkabel
+    [4]USB_Kabel
+        Auflistung von allen USB_Kabel
+    ?[5] Gesammt
+        Auflistung von allen Kategorien in einer Tabelle 
+
+
+!Erweiterungen
+    1. Dashboard
+        kleine übersicht von mehren verschiedene unterseiten
+    2. Noitzen
+        Verwendung als Noitzblock
+    3. Meldung 
+        zb. falls ein Produkt zu wenig vorhanden ist
+    4. Bestandliste
+        Einführung von neuen Produkten ggf. Komplette Kategorien     
+    5. Personalliste
+        Unterschiedliche Personalgruppen mit unterschiedlichen Anwendungsmöglichkeiten
+            1. Einsicht in Bestand 
+                 ja [] nein []
+            2. Einsicht in Produkte 
+                 ja [] nein []
+            3. Bearbeitung des Bestandes 
+                 ja [] nein []
+            4. Einfügung von Kategorien 
+                 ja [] nein []
+            5. Einfügung von Produkte 
+                 ja [] nein []
+            6. Löschen von Kategorien 
+                 ja [] nein []
+            7. Löschen von Produkte 
+                 ja [] nein []
+
+    Kundeneinsicht
+        Kategorien?
+        
+        Produkte
+            1. Einsicht in Bestand 
+                 ja [] nein []
+            3. Bearbeitung des Bestandes 
+                 ja [] nein []
+            7. Löschen von Produkte 
+                 ja [] nein []
+            2. Einsicht in Produkte 
+                 ja [] nein []
+            5. Einfügung von Produkte 
+                 ja [] nein []
+            4. Einfügung von Kategorien 
+                 ja [] nein []
+            6. Löschen von Kategorien 
+                 ja [] nein []
+
+    trennung von mitarbeiter und kunden einsicht benötigt:
+        server
+        firewall
+        sercer software
