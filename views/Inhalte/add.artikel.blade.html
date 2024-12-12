@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel hinzufügen</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin: 20px auto;
+            display: block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;">Artikel hinzufügen</h1>
+<form action="{{route('artikel.store')}}" method="POST">
+@csrf
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
+  <table>
+    <tr>
+        <th>Kartegorie</th>
+        <td><input type="text" name="kategorie" value="{{old('kategorie')}}"></td>
+    </tr>
+    <tr>
+        <th>Bezeichnung:</th>
+        <td><input type="text" name="bezeichnung" value="{{old('bezeichnung')}}" required></td>
+     </tr>
+    <tr>
+        <th>Produktnummer:</th>
+        <td><input type="text" name="produkt_nr" value="{{old('produkt_nr')}}" required></td>
+     </tr>
+    <tr>
+        <th>Merkmal:</th>
+        <td><input type="text" name="merkmal" value="{{old('merkmal')}}"></td>
+    </tr>
+    <tr>
+        <th>Anzahl:</th>
+        <td><input type="number" name="anzahl" value="{{old('anzahl')}}" min="0" required></td>
+     </tr>
+  </table>
+<button type="submit">Artikel hinzufügen</button>
+</form>
+</body>
+</html>

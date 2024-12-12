@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrogeräte</title>
+    <link rel="stylesheet" href="/views/design.css">
+
+</head>
+<body>
+<table class="all">
+    <thead>
+     <tr class="top">
+     <th>Kategorie</th>
+     <th>Artikel Nr.</th>
+     <th>Bezeichnung</th>
+     <th>Merkmal</th>
+     <th>Anzahl</th>
+     </tr>
+     </thead>
+
+ <tbody>
+    @foreach($artikel as $artikel)
+     <tr>
+     <td>{{ $artikel->bezeichnung }}</td>
+     <td>{{ $artikel->produkt_nr }}</td>
+     <td>{{ $artikel->bezeichnung }}</td>
+     <td>{{ $artikel->merkmal ?? }}</td>
+     <td>{{ $artikel->anzahl ?? 'Nicht verfügbar' }}</td>
+     </tr>
+    @endforeach
+ </tbody>
+</table>
+<div class="mid">
+    <form method="get" action="{{$artikel-bearbeiten}}" target="artikelIframe">
+     <BUTTON type="submit">Artikel Bearbeiten</BUTTON>    
+     </form>
+     <form method="get" action="{{$artikel-hinzufügen}}" target="artikelIframe">
+     <BUTTON type="submit">Neuer Artikel hinzufügen</BUTTON>
+     </form>
+
+
+    <!-- add.artikel.blade.html einbinden bei button benutzung -->
+    <iframe name="artikelIframe" src="" width="100%" height="600" style="border: 1px solid #ccc; display:none;"></iframe>
+</div>
+
+
+</body></html>

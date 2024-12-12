@@ -1,25 +1,16 @@
 <?php
 
-use App\Http\Controllers\MonitorkabelController;
-use App\Http\Controllers\NetzwerkkabelController;
-use App\Http\Controllers\UsbKabelController;
-use App\Http\Controllers\ElektrogeraeteController;
+use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WarehouseController;
 
 Route::get('/warenlager', [WarehouseController::class, 'index']);
+Route::get('/', function () {return view('welcome');});
 
-
-Route::get('/', function () {
-     return view('welcome');
-     });
-
-// Routen für produkte 
-     Route::resource('elektrogeraete', ElektrogeraeteController::class);
-     Route::resource('netzwerkkabel', NetzwerkkabelController::class);
-     Route::resource('monitorkabel', MonitorkabelController::class);
-     Route::resource('usb_kabel', UsbKabelController::class);
-
+// Routen für Artikel
+      Route::get('/artikel-hinzufügen', [ArtikelController::class, 'store'])->name('artikel.store');
+      Route::get('/artikel-bearbeiten', [ArtikelController::class, 'store'])->name('artikel.store');
+      Route::get('/artikel-löschen', [ArtikelController::class, 'store'])->name('artikel.store');
 // Routen für Personal
      //
 // Routen für Notizen
@@ -29,10 +20,5 @@ Route::get('/', function () {
 // Routen für Benutzerverwaltung
      //
 
-// Routen für Produkt +erstellung + speichern
 
-use App\Http\Controllers\MonitorkabelController;
-
-Route::get('/monitorkabel-erstellen', [MonitorkabelController::class, 'create']);
-Route::post('/monitorkabel-speichern', [MonitorkabelController::class, 'store'])->name('monitorkabel.store');
 
